@@ -63,5 +63,4 @@ class wordofthemoment_portal extends portal_generic {
 		return $myout;
 	}
 }
-if(version_compare(PHP_VERSION, '5.3.0', '<')) registry::add_const('short_wordofthemoment_portal', wordofthemoment_portal::__shortcuts());
 ?>
