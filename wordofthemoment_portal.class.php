@@ -31,6 +31,7 @@ class wordofthemoment_portal extends portal_generic {
 		'name'			=> 'Word of the Moment',
 		'version'		=> '2.0.0',
 		'author'		=> 'WalleniuM',
+		'icon'			=> 'fa-book',
 		'contact'		=> EQDKP_PROJECT_URL,
 		'description'	=> 'Output a randomword or sentence of the moment',
 	);
