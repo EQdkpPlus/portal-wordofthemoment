@@ -21,13 +21,10 @@ if ( !defined('EQDKP_INC') ){
 }
 
 class wordofthemoment_portal extends portal_generic {
-	public static function __shortcuts() {
-		$shortcuts = array('user', 'core', 'config', 'bbcode'=>'bbcode');
-		return array_merge(parent::$shortcuts, $shortcuts);
-	}
-
-	protected $path		= 'wordofthemoment';
-	protected $data		= array(
+	
+	public static $shortcuts = array('bbcode'=>'bbcode');
+	protected static $path		= 'wordofthemoment';
+	protected static $data		= array(
 		'name'			=> 'Word of the Moment',
 		'version'		=> '2.0.0',
 		'author'		=> 'WalleniuM',
@@ -35,26 +32,24 @@ class wordofthemoment_portal extends portal_generic {
 		'contact'		=> EQDKP_PROJECT_URL,
 		'description'	=> 'Output a randomword or sentence of the moment',
 	);
-	protected $positions = array('left1', 'left2', 'right', 'middle','bottom');
+	protected static $positions = array('left1', 'left2', 'right', 'middle','bottom');
 	protected $settings	= array(
-		'pk_wotd_words'		=> array(
-			'name'			=> 'pk_wotm_words',
-			'language'		=> 'pk_wotm_words',
-			'property'		=> 'bbcodeeditor',
+		'words'		=> array(
+			'type'			=> 'bbcodeeditor',
 			'cols'			=> '30',
 			'rows'			=> '20',
 			'codeinput'		=> false,
 		),
 
 	);
-	protected $install	= array(
+	protected static $install	= array(
 		'autoenable'		=> '0',
 		'defaultposition'	=> 'right',
 		'defaultnumber'		=> '7',
 	);
 
 	public function output() {
-		$words = explode(";", $this->config->get('pk_wotm_words'));
+		$words = explode(";", $this->config('words'));
 		if(count($words) > 0){
 			shuffle($words);
 			$myout = $this->bbcode->toHTML($words[0]);
