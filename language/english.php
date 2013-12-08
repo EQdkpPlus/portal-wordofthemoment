@@ -25,6 +25,6 @@ $lang = array(
 	'wordofthemoment_name'	=> 'Words Module',
 	'wordofthemoment_desc'	=> 'Output a randomword or sentence of the moment',
 	'pk_wotm_nobd'			=> 'No words defined!',
-	'wordofthemoment_words'	=> 'Add Words/Sentences, seperated by semicolon (;)',
+	'words_f_words'	=> 'Add Words/Sentences, seperated by semicolon (;)',
 );
 ?>

@@ -31,6 +31,7 @@ class wordofthemoment_portal extends portal_generic {
 		'icon'			=> 'fa-book',
 		'contact'		=> EQDKP_PROJECT_URL,
 		'description'	=> 'Output a randomword or sentence of the moment',
+		'lang_prefix'	=> 'words_'
 	);
 	protected static $positions = array('left1', 'left2', 'right', 'middle','bottom');
 	protected $settings	= array(

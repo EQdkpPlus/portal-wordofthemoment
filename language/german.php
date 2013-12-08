@@ -25,6 +25,6 @@ $lang = array(
 	'wordofthemoment_name'	=> 'Sprüche Modul',
 	'wordofthemoment_desc'	=> 'Zeigt ein zufälligen Satz oder Wort im Modul an.',
 	'pk_wotm_nobd'			=> 'Keine Sprüche definiert!',
-	'wordofthemoment_words'	=> 'Sprüche eingeben, per Semikolon (;) trennen',
+	'words_f_words'	=> 'Sprüche eingeben, per Semikolon (;) trennen',
 );
 ?>
