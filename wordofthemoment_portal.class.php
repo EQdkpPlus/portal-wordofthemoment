@@ -22,7 +22,6 @@ if ( !defined('EQDKP_INC') ){
 
 class wordofthemoment_portal extends portal_generic {
 	
-	public static $shortcuts = array('bbcode'=>'bbcode');
 	protected static $path		= 'wordofthemoment';
 	protected static $data		= array(
 		'name'			=> 'Word of the Moment',
