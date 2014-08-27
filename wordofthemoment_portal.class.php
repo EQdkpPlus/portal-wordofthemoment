@@ -47,6 +47,8 @@ class wordofthemoment_portal extends portal_generic {
 		'defaultposition'	=> 'right',
 		'defaultnumber'		=> '7',
 	);
+	
+	protected static $apiLevel = 20;
 
 	public function output() {
 		$words = explode(";", $this->config('words'));
