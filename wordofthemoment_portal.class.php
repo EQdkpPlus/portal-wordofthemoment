@@ -51,11 +51,19 @@ class wordofthemoment_portal extends portal_generic {
 	protected static $apiLevel = 20;
 
 	public function output() {
-		$words = explode(";", $this->config('words'));
-		if(count($words) > 0){
-			shuffle($words);
-			$myout = $this->bbcode->toHTML($words[0]);
-		}else{
+		$words = explode("\n", $this->config('words'));
+
+		if(count($words) > 1){
+			$strWord = '';
+			while($strWord === ''){
+				shuffle($words);
+				$strWord = trim($words[0]);
+				$myout = $strWord = $this->bbcode->toHTML(trim($words[0]));
+			}
+
+		} elseif(count($words) === 0 && $words[0] != ''){
+			$myout = $words[0];
+		} else {
 			$myout = $this->user->lang('pk_wotm_nobd');
 		}
 		return $myout;
