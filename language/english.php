@@ -1,6 +1,6 @@
 <?php
 /*	Project:	EQdkp-Plus
- *	Package:	Word of the moment Portal Module
+ *	Package:	EQdkp-Plus Language File
  *	Link:		http://eqdkp-plus.eu
  *
  *	Copyright (C) 2006-2015 EQdkp-Plus Developer Team
@@ -19,15 +19,23 @@
  *	along with this program.  If not, see <http://www.gnu.org/licenses/>.
  */
 
-if ( !defined('EQDKP_INC') ){
-	header('HTTP/1.0 404 Not Found');exit;
+ 
+if (!defined('EQDKP_INC')) {
+	die('You cannot access this file directly.');
 }
 
-$lang = array(
-	'wordofthemoment'		=> 'Words',
-	'wordofthemoment_name'	=> 'Words Module',
-	'wordofthemoment_desc'	=> 'Output a randomword or sentence of the moment',
-	'pk_wotm_nobd'			=> 'No words defined!',
-	'words_f_words'	=> 'Add one Words/Sentences per line',
+//Language: English	
+//Created by EQdkp Plus Translation Tool on  2014-12-17 21:28
+//File: portal/wordofthemoment/language/english.php
+//Source-Language: german
+
+$lang = array( 
+	"wordofthemoment" => 'Words',
+	"wordofthemoment_name" => 'Words Module',
+	"wordofthemoment_desc" => 'Output a randomword or sentence of the moment',
+	"pk_wotm_nobd" => 'No words defined!',
+	"words_f_words" => 'Add Words/Sentences, seperated by semicolon (;)',
+	
 );
+
 ?>
