@@ -25,7 +25,7 @@ if (!defined('EQDKP_INC')) {
 }
 
 //Language: English	
-//Created by EQdkp Plus Translation Tool on  2014-12-17 21:28
+//Created by EQdkp Plus Translation Tool on  2014-12-17 23:17
 //File: portal/wordofthemoment/language/english.php
 //Source-Language: german
 
@@ -34,7 +34,7 @@ $lang = array(
 	"wordofthemoment_name" => 'Words Module',
 	"wordofthemoment_desc" => 'Output a randomword or sentence of the moment',
 	"pk_wotm_nobd" => 'No words defined!',
-	"words_f_words" => 'Add Words/Sentences, seperated by semicolon (;)',
+	"words_f_words" => 'Insert here the words/sentences, one per line.',
 	
 );
 
